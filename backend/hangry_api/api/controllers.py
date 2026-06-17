@@ -1,4 +1,4 @@
-class Delivery()
+class Delivery():
   def calculate(order,distance):coverage ru
     items = 0
     for item in order:
