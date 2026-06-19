@@ -1,5 +1,6 @@
 name: Lesson 6
 
+
 on:
   push:
     branches:
@@ -48,6 +49,6 @@ jobs:
       - run: cypress run --config-file=cypress.config.js
       - uses: actions/upload-artifact@v4.6.2
         if: always()
-        with:
+        with: 
           name: cypress-videos
           path: frontend/cypress/videos
