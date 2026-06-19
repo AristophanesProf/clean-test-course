@@ -11,11 +11,11 @@ jobs:
       defaults:
         run:
           working-directory: frontend
-        steps:
-          - uses: actions/checkout@v4
-          - run: npm install
-          - name: Run functional tests
-            run: npm test -- --coverage --watchAll=false
+      steps:
+        - uses: actions/checkout@v4
+        - run: npm install
+        - name: Run functional tests
+          run: npm test -- --coverage --watchAll=false
   deploy:
     needs: [function_test]
     runs-on: ubuntu-latest
